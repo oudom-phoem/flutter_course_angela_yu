@@ -68,10 +68,10 @@ class _StoryPageState extends State<StoryPage> {
                     //TODO: Step 18 - Call the nextStory() method from storyBrain and pass the number 1 as the choice made by the user.
                   },
                   style: TextButton.styleFrom(backgroundColor: Colors.red),
-                  child: const Text(
+                  child: Text(
                     //TODO: Step 13 - Use the storyBrain to get the text for choice 1.
-                    'Choice 1',
-                    style: TextStyle(
+                    storyBrain.getChoice1(),
+                    style: const TextStyle(
                       fontSize: 20.0,
                     ),
                   ),
