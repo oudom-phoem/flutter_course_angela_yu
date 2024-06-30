@@ -49,6 +49,9 @@ class StoryBrain {
   }
 
   //TODO: Step 12 - Create a method called getChoice2() that returns the text for the first choice2 from _storyData.
+  String getChoice2() {
+    return _storyData[0].choice2;
+  }
 
   //TODO: Step 25 - Change the storyNumber property into a private property so that only story_brain.dart has access to it. You can do this by right clicking on the name (storyNumber) and selecting Refactor -> Rename to make the change across all the places where it's used.
 
