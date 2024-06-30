@@ -48,13 +48,13 @@ class _StoryPageState extends State<StoryPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              const Expanded(
+              Expanded(
                 flex: 12,
                 child: Center(
                   child: Text(
                     //TODO: Step 10 - use the storyBrain to get the first story title and display it in this Text Widget.
-                    'Story text will go here.',
-                    style: TextStyle(
+                    storyBrain.getStory(),
+                    style: const TextStyle(
                       fontSize: 25.0,
                     ),
                   ),
